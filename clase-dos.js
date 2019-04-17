@@ -25,5 +25,9 @@ var joffrey = {
 // imprimimos en consola una propiedad específica del objeto
 console.log(joffrey.age)
 
+if (true) {
+  console.log('hola');
+}
+
 
 
