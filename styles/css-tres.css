@@ -1,0 +1,64 @@
+body {
+    background-color: #336699;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: block;
+    width: 140px;
+    margin: 50px auto 0;
+}
+
+form label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+/*la coma separa dos selectores que reciben un mismo conjunto de propiedades*/
+form label::before, form label::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left:4px
+}
+
+form label::before{
+    border: 2px solid white;
+    border-radius: 4px;    
+}
+
+form label::after {
+    display: none;
+    top:0px;
+    left: 12px;
+    border:3px solid #369;
+    border-top:none;
+    border-left:none;
+    width: 8px;
+    transform: rotate(45deg);
+}
+
+form label.checked::before{
+    background-color: white;
+}
+
+form label.checked::after{
+    display: block;
+}
+
+form label span {
+
+}
+
+form label input {
+    display: none;
+}

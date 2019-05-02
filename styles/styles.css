@@ -1,0 +1,250 @@
+p,ul{
+  margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body{
+  background-color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tweet{
+  background-color: #ffffff; 
+  display: block;
+  width: 600px;
+  margin:0 auto;
+  /*
+    margin:10px 20px 10px 20px; asignando valore en 4 direcciones en el orden de las manesillas del reloj
+    margin:10px; asignando un solo valor en las 4 direcciones
+    margin:10px 20px; asignando un valor en el eje vertical y otro en el horizontal
+  */
+  padding:25px 0 0 0;
+}
+
+.tweet > div {
+
+}
+
+.tweet .side-padded {
+  margin: 0 25px
+}
+
+.tweet .tweet-header{
+  overflow: hidden;
+  /*
+    overflow: hidde; fuerza al elemento a envolver todo su contenido y además oculta todo lo que exeda su alto.
+  */
+}
+
+.tweet .tweet-header .avatar{
+  width: 60px;
+  height: 60px;
+  background-color:#ccc;
+  border-radius: 30px;
+  float:left;
+}
+
+.tweet .tweet-header .user{
+  float: left;
+  margin: 10px 0 0 15px;
+}
+
+.tweet .tweet-header .account-name{
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.tweet .tweet-header .user-name{
+  font-weight: normal;
+  font-size: 18px;
+  color: #999999;
+}
+
+.tweet .tweet-header .follow {
+  display: block;
+  border:1px solid red;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  margin: 15px 0 0 0;
+  padding:6px 0;
+  height: 32px;
+  box-sizing: border-box;
+  color:#ff0000;
+  background-color: #fff;
+  text-decoration:none;
+  float: right;
+  transition:background-color, 0.5s;
+}
+
+.tweet .tweet-header .follow:hover {
+  background-color:#ff0000;
+  color: white;
+}
+
+.tweet .tweet-text {
+  font-size: 24px;
+  color:black;
+  padding:5px 0 5px 0;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+.tweet .tweet-text p {
+  margin-bottom: 10px; 
+}
+
+.tweet .tweet-text .tweet-date-time{
+  font-weight: normal;
+  font-size: 14px;
+  color: #999999;
+}
+
+.tweet-details{
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  height: 45px;
+}
+
+.tweet-details .tweet-stat{
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #999999;
+  line-height: 45px;
+  margin:0 15px 0 0;
+}
+
+.tweet-details .tweet-stat span{
+  color: #000000;
+  font-weight: bold;
+}
+
+.tweet .tweet-details .tweet-details-container{
+  float:left;
+}
+
+.tweet .tweet-details .tweet-stats-rt{
+font-weight: bold;
+font-size:18px;
+}
+
+.tweet .tweet-details .tweet-rt{
+  font-weight: normal;
+  font-size:18px;
+  color: #999999;
+}
+
+.tweet .tweet-details .tweet-stats-fav{
+  font-weight: bold;
+  font-size:18px;
+  }
+  
+  .tweet .tweet-details .tweet-fav{
+    font-weight: normal;
+    font-size:18px;
+    color: #999999;
+  }
+
+  .tweet .tweet-details .avatar-list{
+    display: block;
+    overflow: hidden;
+    padding:0 0 0 15px;
+    border-left:1px solid #f1f1f1;
+    height: 45px;
+  }
+
+  .tweet .tweet-details .avatar-list li{
+    display: block;
+    background-color:#ccc;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    float:left;
+    margin:10px 5px 10px 0; 
+    text-align: center;
+  }
+  
+  .tweet .interactions{
+    padding: 15px 0;
+    overflow: hidden;
+  }
+
+  .tweet .interactions li{
+    margin:0 20px 0 0;
+    list-style: none;
+    display: block;
+    float: left;
+  }
+
+  .tweet .interactions li a{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color:#ccc;
+  }
+
+  .tweet .interactions li a:hover{
+    color:#336699;
+  }
+
+  /*combinación de psudoselector hover con classes de hijos*/
+  .tweet .interactions li a:hover .icon{
+    background-color: red;
+  }
+
+  .tweet .interactions li a .icon{
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #ccc;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+
+  .tweet .tweet-reply {
+    padding: 20px 25px;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
+    overflow: hidden;
+  }
+
+  .tweet .tweet-reply .reply-avatar{
+   float: left;
+   display: block;
+   width: 35px;
+   height: 35px;
+   border-radius: 100%;
+   background-color: #ccc;
+   border: 1px solid #ccc;
+   margin-right: 15px
+  }
+
+  .tweet .tweet-reply input{
+    float: left;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    width: 450px
+  }
+
+  .tweet .tweet-reply input:focus {
+    outline: none;
+    border-color: red;
+  }
+
+.limpiador{
+  clear: both;
+  /*
+    referencia al padre para que pueda envolver a los hijos flotantes.  
+  */
+}

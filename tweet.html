@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweet en html y css</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"/>
+    <script src="clase-seis.js" type="text/javascript"></script>
+  </head>
+  <body onload="imprimeElementos()">
+    <div class="tweet" id="tweet">
+      <div class="tweet-header side-padded">
+        <img class="avatar"/>
+        <div class="user">
+          <p class="account-name">Jack</p>
+          <span class="user-name">@jack</span>
+        </div>
+        <a href="#" class="follow">
+          <span class="initial">Following</span>
+        </a>
+      </div>
+      
+      <div class="tweet-text side-padded">
+        <p>just setting up my twttr</p>
+      <span class="tweet-date-time">8:50 PM - 21 Mar 2006</span>
+      </div>
+      <div class="tweet-details side-padded">
+        <!-- 
+        <div class="tweet-details-container">
+          <span class="tweet-stats-rt">106,329</span>
+          <span class="tweet-rt">Retweets</span>
+          <span class="tweet-stats-fav">80,450</span>
+          <span class="tweet-fav">Likes</span>
+        </div>
+        -->
+        <p class="tweet-stat"><span>106,329</span> Retweets</p>
+        <p class="tweet-stat"><span>80,450</span> Likes</p>
+
+        <ul class="avatar-list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul> 
+      </div>
+      <ul class="interactions side-padded">
+          <li>
+              <a href="#">
+                  <span class="icon"></span>
+                  3,9K
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"></span>
+                  3,9K
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"></span>
+                  3,9K
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <span class="icon"></span>
+                  3,9K
+              </a>
+          </li>            
+      </ul>
+      <div class="tweet-reply">
+          <img class="reply-avatar">
+          <input type="text" placeholder="tweet your reply"/>
+        </div>
+    </div>
+  </body>
+</html>
