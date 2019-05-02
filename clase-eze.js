@@ -75,3 +75,4 @@ var restoDeCDividaPor8 = c % 8; // COMPLETAR ESTA LINEA
 console.log("El resto de dividir a ",a," por 3 es ", restoDeADividaPor3);
 console.log("El resto de dividir b ",b," por 5 es ", restoDeBDividaPor5);
 console.log("El resto de dividir c ",c," por 8 es ", restoDeCDividaPor8);
+
