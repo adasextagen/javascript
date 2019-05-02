@@ -141,3 +141,13 @@ var restoDeCDividaPor8 = c % 8;
 console.log("El resto de dividir a por 3 es ", restoDeADividaPor3);
 console.log("El resto de dividir b por 5 es ", restoDeBDividaPor5);
 console.log("El resto de dividir c por 8 es ", restoDeCDividaPor8);
+
+// 23/04
+var nums = [1,2,3,4,5];
+var alpha = ['a','b','c'];
+var count = 0;
+var currentArray;
+
+if(count < nums.length){
+
+}
