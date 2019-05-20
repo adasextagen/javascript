@@ -6,7 +6,7 @@
     <!-- <script src="clase-seis.js" type="text/javascript"></script> -->
     <script src="comments.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body onload="printComments()">
     <div class="tweet red" id="tweet">
       <div class="tweet-header side-padded">
         <img class="avatar" id="user-avatar"/>
@@ -71,7 +71,7 @@
       </ul>
       <div class="tweet-reply">
         <img class="reply-avatar">
-        <input id="commentBox" type="text" placeholder="tweet your reply"/>
+        <input id="commentBox" type="text" placeholder="tweet your reply" onkeypress="handleKeyPress(event)"/>
         <button type="button" onclick="sendComment()">Enviar</button>
       </div>
       <ul id="commentsList">
